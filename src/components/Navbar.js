@@ -9,9 +9,8 @@ export default function Navbar(prop) {
           className={`navbar navbar-expand-lg navbar-${prop.mode} bg-${prop.mode}`}
         >
           <div className="container-fluid">
-            <a className={`navbar-brand text-${
-                    prop.mode === "light" ? "dark" : "light"
-                  } `} href="/">
+            <a className={`navbar-brand text-${prop.mode === "light" ? "dark" : "light"
+                  } `} href="#">
               {prop.tittle}
             </a>
             <button
@@ -46,51 +45,7 @@ export default function Navbar(prop) {
                 </li>
               </ul>
 
-              {/* <form className="d-flex">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-            </form> */}
-
-              {/* <div className="form-check form-switch">
-                <label
-                  className={`form-check-label text-${
-                    prop.mode === "light" ? "dark" : "light"
-                  } `}
-                  htmlhtmlFor="flexSwitchCheckDefault"
-                >
-                  Enable Dark Mode
-                </label>
-                <input
-                  className="form-check-input"
-                  role="switch"
-                  type="checkbox"
-                  onClick={prop.toggleMode}
-                  id="flexSwitchCheckDefault"
-                />
-              </div> */}
-
-              {/* <div className="form-check">
-                <input onChange={handOneChange} className="form-check-input" type="radio" name="flexRadioDefault" />
-               
-              </div>
-              <div className="form-check">
-                <input onChange={handOneChange} className="form-check-input" type="radio" name="flexRadioDefault"  />
-               
-              </div>
-              <div className="form-check">
-                <input onChange={handOneChange} className="form-check-input" type="radio" name="flexRadioDefault" />
-               
-              </div>
-              <div className="form-check">
-                <input onChange={handOneChange} className="form-check-input" type="radio" name="flexRadioDefault" checked/>
-              </div> */}
+            
 
               <div className="form-check">
                 <input

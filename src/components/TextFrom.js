@@ -15,9 +15,8 @@ export default function TextFrom(prop) {
     prop.showAlert("Success", "Updated to Lowercase")
   };
   const handCopyText = () => {
-    let text= document.getElementById('exampleFormControlTextarea1');
-    text.select();
-    navigator.clipboard.writeText(text.value);
+    document.getSelection().removeAllRanges();
+    navigator.clipboard.writeText(text);
     prop.showAlert("Success", "Copy to Clipboard")
   };
   const handExtraSpace = () => {
@@ -91,7 +90,7 @@ export default function TextFrom(prop) {
       <div className={`container text-${prop.mode=== "light" ? "dark" : "light"}`}>
         <h2>Your text summary</h2>
         <p>
-          {text.split(" ").length - 1}words and {text.length}characters
+          {text.split(/\s+/).filter((element)=>{return element.length!==0}).length}words and {text.length}characters
         </p>
         <p>{0.008 * (text.split(" ").length-1)} minutes to read</p>
         <h3>Preview</h3>
