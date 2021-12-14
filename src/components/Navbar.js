@@ -131,7 +131,7 @@ export default function Navbar(prop) {
                   } `}
                   htmlFor="flexRadioDefault2"
                 >
-                  Enable Dark Mode
+                  Enable Mode
                 </label>
               </div>
             </div>
