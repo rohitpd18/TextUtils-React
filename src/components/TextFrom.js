@@ -51,28 +51,28 @@ export default function TextFrom(prop) {
           id="exampleFormControlTextarea1"
           rows="8"
         ></textarea>
-        <button
+        <button disabled= {text.length===0}
           className="btn btn-primary m-2"
           onClick={updateUppercase}
           onChange={handOneChange}
         >
           Convert to Uppercase
         </button>
-        <button
+        <button disabled= {text.length===0}
           className="btn btn-primary m-2"
           onClick={updateLowercase}
           onChange={handOneChange}
         >
           Convert to Lowercase
         </button>
-        <button
+        <button disabled= {text.length===0}
           className="btn btn-primary m-2"
           onClick={handCopyText}
           onChange={handOneChange}
         >
           Copy Text
         </button>
-        <button
+        <button disabled= {text.length===0}
           className="btn btn-primary m-2"
           onClick={handExtraSpace}
           onChange={handOneChange}
@@ -80,7 +80,7 @@ export default function TextFrom(prop) {
           Remove Extra Space
         </button>
        
-        <button
+        <button disabled= {text.length===0}
           className="btn btn-danger m-2"
           onClick={clearText}
           onChange={handOneChange}
