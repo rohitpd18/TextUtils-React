@@ -51,32 +51,10 @@ export default function Navbar(prop) {
               Search
             </button>
           </form> */}
-              {/* <div class="form-check ">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  radioGroup="mode"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label
-                  class="form-check-label"
-                  for="flexSwitchCheckDefault"
-                ></label>
-              </div>
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  radioGroup="mode"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-                <label
-                  class="form-check-label"
-                  for="flexSwitchCheckDefault"
-                ></label>
-              </div>
+
+
+
+              
               <div className="form-check form-switch">
                 <label
                   className={`form-check-label text-${
@@ -88,36 +66,19 @@ export default function Navbar(prop) {
                 </label>
                 <input
                   className="form-check-input"
-                  type="radio"
-                  radioGroup="mode"
+                  role="switch"
+                  type="checkbox"
                   onClick={prop.toggleMode}
                   id="flexSwitchCheckDefault"
                 />
-              </div> */}
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Default radio
-                </label>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Default radio
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Default radio
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked/>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Default checked radio
-                </label>
-              </div>
+
+
+
+
+
+
+              
             </div>
           </div>
         </nav>
