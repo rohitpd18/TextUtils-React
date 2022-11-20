@@ -10,7 +10,7 @@ export default function Navbar(prop) {
         >
           <div className="container-fluid">
             <a className={`navbar-brand text-${prop.mode === "light" ? "dark" : "light"
-                  } `} href="#">
+                  } `} href="/">
               {prop.tittle}
             </a>
             <button
@@ -32,14 +32,14 @@ export default function Navbar(prop) {
                 <li  className="nav-item">
                   <a className={`nav-link active navbar-brand text-${
                     prop.mode === "light" ? "dark" : "light"
-                  } `} aria-current="page" href="#">
+                  } `} aria-current="page" href="/">
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className={`nav-link navbar-brand text-${
                     prop.mode === "light" ? "dark" : "light"
-                  } `} href="#">
+                  } `} href="/">
                     About
                   </a>
                 </li>
